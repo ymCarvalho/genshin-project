@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgba(27, 22, 22, 0.281);
+}
+.container{
+    width: 100%;
+    background-color: rgba(27, 22, 22, 0.281);
+}
+.common-text{
+    display: flex;
+    flex-direction: column;
+}
+.commons, .week{
+    margin-top: 90px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 105px;
+    justify-content: center;
+    padding: 10px;
+}
+.commonCard, .weekCard{
+    height: 450px;
+    width: 350px;
+    border: 5px solid #000000;
+    border-bottom: 50px solid #000000;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 5);
+    overflow: hidden;
+    cursor: pointer;
+}
+.commonCard img, .weekCard img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: .2s linear;
+
+}

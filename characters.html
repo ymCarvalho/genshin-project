@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="styles/characters.css">
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+
+<body>
+  <a href="index.html"> <button>go back</button></a>
+
+  <div id="character-selector">
+    <i id="top" class="fa-solid fa-chevron-up" onclick="back()"></i>
+    <ul class="carousel">
+      <li class="card">
+        <div class="character"><img src="images/Characters-Images/Arataki_Icon.webp"
+            onclick="imageCharacter( 'Arataki', 'images/Characters-Images/Arataki_Portrait.webp')">
+        </div>
+      </li>
+      <li class="card">
+        <div class="character"><img src="images/Characters-Images/Beidou_Icon.webp"
+            onclick="imageCharacter( 'Beidou', 'images/Characters-Images/Beidou_Portrait.webp')">
+        </div>
+      </li>
+      <li class="card">
+        <div class="character"><img src="images/Characters-Images/Dehya_Icon.webp"
+            onclick="imageCharacter('Dehya', 'images/Characters-Images/Dehya_Portrait.webp')">
+        </div>
+      </li>
+      <li class="card">
+        <div class="character"><img src="images/Characters-Images/Wriothesley_Icon.webp"
+            onclick="imageCharacter('Wriothesley', 'images/Characters-Images/Wriothesley_Portrait.webp')">
+        </div>
+      </li>
+      <li class="card">
+        <div class="character"><img src="images/Characters-Images/Nahida_Icon.webp"
+            onclick="imageCharacter('Nahilda', 'images/Characters-Images/Nahida_Portrait.webp')">
+        </div>
+      </li>
+      <li class="card">
+        <div class="character"><img src="images/Characters-Images/Neuvillette_Icon.webp"
+            onclick="imageCharacter('Neuvillette', 'images/Characters-Images/Neuvillette_Portrait.webp')">
+        </div>
+      </li>
+      <li class="card">
+        <div class="character"><img src="images/Characters-Images/Yelan_Icon.webp"
+            onclick="imageCharacter( 'Yelan', 'images/Characters-Images/Yelan_Portrait.webp')">
+        </div>
+      </li>
+      <li class="card">
+        <div class="character"><img src="images/Characters-Images/Kujou_Icon.webp"
+            onclick="imageCharacter( 'Kujou Sara', 'images/Characters-Images/Kujou_Portrait.webp')">
+        </div>
+      </li>
+
+    </ul>
+    <i id="bottom" class="fa-solid fa-chevron-down" onclick="next()"></i>
+  </div>
+
+
+
+  <section id="cu">
+    <h1 id="name"></h1>
+    <img id="cardImagem" src="">
+  </section>
+
+  <script src="scripts/characters.js"></script>
+</body>
+
+</html>

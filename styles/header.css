@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    font-family: Font-Genshin;
+}
+
+@font-face {
+    font-family: Font-Genshin;
+    src: url(../fonts/MilknBalls-BlackDemo.otf);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    background-color: rgba(34, 33, 33, 0.757);
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    z-index: 10;
+    border-bottom: solid 2px rgb(0, 0, 0);
+
+}
+
+header nav {
+    width: 100%;
+    height: 70px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.buttons {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.botao-dourado {
+    width: 150px;
+    height: 70px;
+    border: none;
+    background-size: 250%;
+    background-position: left;
+    color: #ffd277;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-position 0.3s, transform 0.3s, color 0.3s;
+    overflow: hidden;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+
+.botao-dourado:hover {
+    background-position: right;
+    transform: scale(1.05);
+}
+
+.mobile-menu {
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+}
+
+@media screen and (max-width: 700px) {
+    body{
+        overflow-x: hidden;
+    }
+    .buttons {
+        position: absolute;
+        top: 14vh;
+        right: 0;
+        width: 50vh;
+        height: 92vh;
+        background-color: rgba(34, 33, 33, 0.757);
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+    }
+    .buttons a{
+        margin-left: 0;
+        opacity: 0;
+    }
+    .mobile-menu{
+        display: block;
+    }
+}
+.buttons.active {
+    transform: translateX(0);
+}

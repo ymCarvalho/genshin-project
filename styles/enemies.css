@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(48, 48, 48);
+
+}
+
+.content1{
+    margin-top: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 70vh;
+    width: 100%;
+    background-color: aliceblue;
+}
+.content1 .pic{
+    margin-top: 200px;
+    height: 600px;
+    width: 650px;
+}
+.pic img{
+    height: 100%;
+    width: 100%;
+}
+.content1 .week-text{
+    align-items: center;
+    text-align: center;
+    height: 100px;
+    width:40%;
+    padding: 10px;
+}
+.week-text h1{
+    padding: 20px;
+}
+.week-text p{
+    padding: 30px;
+}
+
+.content2{
+    margin-top: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 70vh;
+    width: 100%;
+}
+
+.content2 .pic2{
+    margin-top: 200px;
+    height: 600px;
+    width: 650px;
+}
+.pic2 img{
+
+    height: 100%;
+    width: 100%;
+}
+.content2 .common-text{
+    align-items: center;
+    text-align: center;
+    height: 100px;
+    width:40%;
+    margin-top: -70px;
+    padding: 10px;
+    color: white;
+}
+.common-text h1{
+    padding: 20px;
+}
+.common-text p{
+    padding: 30px;
+}
+
+
+#mais{
+    background-color: #1210a877; /* Cor de fundo do botão */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color: currentColor;
+}
+
+
+
+
+
+
+
+
+
+
+
+
